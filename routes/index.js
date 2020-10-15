@@ -9,7 +9,7 @@ router.get('/', async (req,res) => {
     res.json(blogData.status(200))
 })
 
-router.get('/', async (req,res) => {
+router.get('/post', async (req,res) => {
     const blogData = await blogModel.getSinglepost();
     console.log(blogData);
     res.json(blogData.status(200))
